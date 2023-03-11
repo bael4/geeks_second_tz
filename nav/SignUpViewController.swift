@@ -41,7 +41,8 @@ class SignUpViewController: UIViewController {
    
     @IBAction func signUpAction(_ sender: Any) {
         
-        if emailTextField.text?.isEmpty ?? true && passwordTextField.text?.isEmpty ?? true{
+        if emailTextField.text?.isEmpty ?? true || passwordTextField.text?.isEmpty ?? true || fullNameTextField.text?.isEmpty ?? true || mobileNumberTextField.text?.isEmpty ?? true
+            || userNameTextField.text?.isEmpty ?? true || confirmPasswordTextField.text?.isEmpty ?? true{
             
             emailTextField.layer.borderWidth = 1
             emailTextField.layer.borderColor = UIColor.red.cgColor

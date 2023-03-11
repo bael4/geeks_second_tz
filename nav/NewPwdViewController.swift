@@ -23,7 +23,7 @@ class NewPwdViewController: UIViewController {
         
         
         
-        if  confirmNewPaswordTextField.text?.isEmpty ?? true && newPasswordTextField.text?.isEmpty ?? true {
+        if  confirmNewPaswordTextField.text?.isEmpty ?? true || newPasswordTextField.text?.isEmpty ?? true {
 
             confirmNewPaswordTextField.layer.borderWidth = 1
             confirmNewPaswordTextField.layer.borderColor = UIColor.red.cgColor

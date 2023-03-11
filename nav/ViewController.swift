@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     
     @IBAction func signInAction(_ sender: Any) {
         
-        if emailTextField.text?.isEmpty ?? true && passwordTextField.text?.isEmpty ?? true {
+        if emailTextField.text?.isEmpty ?? true || passwordTextField.text?.isEmpty ?? true {
             emailTextField.layer.borderWidth = 1
             emailTextField.layer.borderColor = UIColor.red.cgColor
             emailTextField.placeholder = "заполните поле"
